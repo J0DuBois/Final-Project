@@ -1,0 +1,32 @@
+body{
+  background-color: black;
+}
+
+header img{
+  position: top 0px, right 0px;
+}
+
+
+h1{
+  color: #6187C4;
+}
+
+h1.name{
+  text-align: center;
+  font-size: 60px;
+}
+
+
+p{
+  color:white;
+}
+
+p.slogan{
+  text-align: center;
+  font-size: 30px;
+}
+
+footer p{
+  position: bottom 0px;
+  text-align: right;
+}

@@ -1,40 +1,60 @@
+@font-face {
+  src: url("../fonts/JacquesFrancois-Regular.ttf");
+  font-family: Jacq;
+}
+@font-face {
+  src: url("../fonts/LibreBodoni-Regular.ttf");
+  font-family: Libre;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   color: white;
 }
-
-body{
-  background-color: black;
-}
-
 header{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.links{
-  list-style: none;
+body{
+  background-color: black;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+h1,h2{
+  font-family: Jacq;
+  color: #6187C4;
+}
+p,a,li{
+  font-family: libre;
 }
 
+/*information for nav*/
+.links{
+  padding-right: 20px;
+  list-style: none;
+}
 .links li{
   display: inline;
   font-size: 20px;
   padding: 20px;
 }
+/*End of information for nav*/
 
+/*Information on home page*/
 .nameslogan{
   padding: 75px;
 }
-
 .nameslogan h1{
   text-align: center;
   font-size: 80px;
-  color: #6187C4;
 }
-
 .nameslogan p{
   text-align: center;
   font-size: 30px;
@@ -43,7 +63,9 @@ header{
 .calltoaction{
   text-align: center;
 }
-
+.calltoaction p{
+  font-size: 20px;
+}
 .calltoaction a{
   padding: 14px 25px;
   text-decoration: none;
@@ -52,13 +74,84 @@ header{
   color: #f0ffff;
   background-color: #2A3B57;
 }
-br{
-  padding:50px;
-}
-footer{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px;
+/*End of information on home page*/
 
+/*information on about me page*/
+.aboutpage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.aboutme{
+  padding: 100px;
+  padding-right: 25px;
+  text-align: center;
+}
+.abouttitle{
+  padding:25px;
+  font-size: 50px;
+}
+.myself{
+  padding-right: 200px;
+  padding-top:50px;
+  padding-bottom:55px;
+  padding-left: 25px;
+}
+/*End of information on about me page*/
+
+/*Information on Career page*/
+.careertitle{
+  font-size: 50px;
+  text-align: center;
+}
+.python{
+  padding-left:10%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 40%;
+}
+.pythonhead{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pylogo{
+  width:75px;
+  height:75px;
+  padding: 10px;
+}
+
+.cpp{
+  padding-left:40%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 10%;
+}
+.Cpphead{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cpplogo{
+  width:75px;
+  height:75px;
+  padding: 10px;
+}
+
+.htmls{
+  padding-left:10%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 40%;
+}
+.htmlhead{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.htmllogo{
+  width:75px;
+  height:75px;
+  padding: 10px;
+}
+/*End of information on Career page*/

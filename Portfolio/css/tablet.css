@@ -21,6 +21,17 @@ header{
 body{
   background-color: black;
 }
+footer{
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 30px;
+}
 h1,h2{
   font-family: Jacq;
   color: #6187C4;
@@ -28,43 +39,11 @@ h1,h2{
 p,a,li{
   font-family: libre;
 }
-li{
-  list-style: none;
-}
-footer{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 30px;
-}
-table {
-    display:table;
-    margin-right:auto;
-    margin-left:auto;
-    width:80%;
-}
 
-tr th{
-    display:table-cell;
-    text-align:center;
-}
-tr:nth-child(odd){
-  background-color:#2A3B57;
-}
-tr:nth-child(even){
-  background-color: #825257;
-}
-input{
-  padding:5px;
-  background-color: #2a3b57;
-}
-textarea{
-  background-color:#2a3b57;
-  resize: none;
- }
 /*information for nav*/
 .links{
   padding-right: 20px;
+  list-style: none;
 }
 .links li{
   display: inline;
@@ -87,6 +66,7 @@ textarea{
 }
 
 .calltoaction{
+  padding: 100px  s
   text-align: center;
 }
 .calltoaction p{
@@ -183,30 +163,7 @@ textarea{
 /*End of information on Career page*/
 
 /*Intormation on works page*/
-.workhead{
-  padding: 50px;
+.worktitle{
+  padding:
 }
-.workhead h1{
-  font-size: 50px;
-  text-align: center;
-}
-.workhead p{
-  font-size: 30px;
-  text-align: center;
-}
-
 /*End of information on works page*/
-.contacthead{
-  text-align: center;
-}
-.contactform{
-  padding-left: 450px
-}
-.contactfield{
-  padding: 10px;
-}
-
-#firstname, #lastname, #emailaddress{
-  padding: 5px;
-}
-/*Start of information on contact page*/

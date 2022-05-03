@@ -1,3 +1,4 @@
+/*Inport fonts*/
 @font-face {
   src: url("../fonts/JacquesFrancois-Regular.ttf");
   font-family: Jacq;
@@ -9,15 +10,38 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  /* margin: 0; */
+  /* padding: 0; */
   color: white;
 }
+
+.fa{
+  padding: 5%;
+}
+
+/*Start of header*/
 header{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+.hamburger{
+  cursor: pointer;
+  font-size: 30px;
+  display: none;
+}
+
+
+@media (max-width:768px) {
+  .hamburger{
+    display: contents;
+  }
+  .navbar{
+    display: none;
+  }
+}
+/*End of Header*/
 body{
   background-color: black;
 }
@@ -31,37 +55,26 @@ p,a,li{
 li{
   list-style: none;
 }
+a{
+  text-decoration: none;
+}
 footer{
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 30px;
+   padding: 30px 15px;
+   margin: auto;
+   font-size: 19px;
 }
-table {
-    display:table;
-    margin-right:auto;
-    margin-left:auto;
-    width:80%;
+footer p {
+  padding: 5px;
 }
-
-tr th{
-    display:table-cell;
-    text-align:center;
+@media (max-width:768px) {
+  footer{
+    top: 90%;
+    width: 100%;
+  }
 }
-tr:nth-child(odd){
-  background-color:#2A3B57;
-}
-tr:nth-child(even){
-  background-color: #825257;
-}
-input{
-  padding:5px;
-  background-color: #2a3b57;
-}
-textarea{
-  background-color:#2a3b57;
-  resize: none;
- }
 /*information for nav*/
 .links{
   padding-right: 20px;
@@ -94,11 +107,16 @@ textarea{
 }
 .calltoaction a{
   padding: 14px 25px;
-  text-decoration: none;
   display: inline-block;
   font-size: 30px;
   color: #f0ffff;
   background-color: #2A3B57;
+}
+@media (max-width:768px) {
+  .nameslogan{
+    padding: 75px 0;
+  }
+
 }
 /*End of information on home page*/
 
@@ -123,6 +141,19 @@ textarea{
   padding-bottom:55px;
   padding-left: 25px;
 }
+@media (max-width:768px) {
+  .aboutpage{
+    flex-wrap: wrap;
+  }
+  .aboutme{
+    width: 100%;
+    padding: 0;
+  }
+  .myself{
+    padding: 30px 0;
+    justify-content: center;
+  }
+}
 /*End of information on about me page*/
 
 /*Information on Career page*/
@@ -130,18 +161,17 @@ textarea{
   font-size: 50px;
   text-align: center;
 }
-.python{
+.python, .htmls{
+  padding: 0 50px;
   padding-left:10%;
-  padding-top: 50px;
-  padding-bottom: 50px;
   padding-right: 40%;
 }
-.pythonhead{
+.pythonhead, .Cpphead, .htmlhead{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.pylogo{
+.pylogo, .cpplogo, .htmllogo{
   width:75px;
   height:75px;
   padding: 10px;
@@ -153,36 +183,34 @@ textarea{
   padding-bottom: 50px;
   padding-right: 10%;
 }
-.Cpphead{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.cpplogo{
-  width:75px;
-  height:75px;
-  padding: 10px;
-}
-
-.htmls{
-  padding-left:10%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-right: 40%;
-}
-.htmlhead{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.htmllogo{
-  width:75px;
-  height:75px;
-  padding: 10px;
+@media (max-width:768px) {
+  .python, .cpp, .htmls{
+    padding: 15px 50px;
+  }
 }
 /*End of information on Career page*/
 
 /*Intormation on works page*/
+table {
+    margin-right:auto;
+    margin-left:auto;
+    width:80%;
+}
+
+tr th{
+    display:table-cell;
+    text-align:center;
+}
+tr:nth-child(odd){
+  background-color:#2A3B57;
+}
+tr:nth-child(even){
+  background-color: #825257;
+}
+td{
+  text-align: center;
+}
+
 .workhead{
   padding: 50px;
 }
@@ -196,17 +224,41 @@ textarea{
 }
 
 /*End of information on works page*/
+
+/*Start of information on contact page*/
+textarea{
+  background-color:#2a3b57;
+  resize: none;
+ }
+
 .contacthead{
   text-align: center;
 }
 .contactform{
-  padding-left: 450px
+  display: flex;
+  justify-content: center;
 }
 .contactfield{
-  padding: 10px;
+  padding: 10px 0;
 }
 
 #firstname, #lastname, #emailaddress{
   padding: 5px;
 }
-/*Start of information on contact page*/
+.button{
+  display: flex;
+  justify-content: center;
+}
+#button{
+  padding: 5px;
+  background-color: #825257;
+}
+
+@media (max-width:768px) {
+  .contacthead{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+}
+/*End of information on contact page*/

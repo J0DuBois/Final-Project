@@ -15,10 +15,11 @@ April 22, 2022 -->
   <body>
     <header>
         <img src="images/portfolio_logo.png" alt="Internet symbol with laptop behind banner with name">
-        <button class="hamburger">
+        <!-- <button class="hamburger">
         <i class="fa fa-bars"></i>
-        </button>
-        <nav class = "navbar" id="navbar">
+        </button> -->
+
+        <!-- <nav class = "topnav" id="topnav"  id="myTopnav">
           <ul class = "links" id="nav-links">
             <li> <a href="index.html">Home</a> </li>
             <li> <a href="pages/aboutme.html">About Me</a> </li>
@@ -26,7 +27,19 @@ April 22, 2022 -->
             <li> <a href="pages/works.html">Work</a> </li>
             <li> <a href="pages/contact.html">Contact</a> </li>
           </ul>
-        </nav>
+        </nav> -->
+
+<nav class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="pages/aboutme.html">About Me</a>
+  <a href="pages/career.html">Career</a>
+  <a href="pages/works.html">Work</a>
+  <a href="pages/contact.html">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <i class="fa fa-bars"></i>
+  </a>
+</nav>
+
     </header>
 
     <main>
@@ -48,8 +61,17 @@ April 22, 2022 -->
         <img src="images/GitHub-Mark-Light-32px.png" alt="github_logo">
       </a>
     </footer>
-    <script src="scripts/script.js">
 
+
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
     </script>
   </body>
 </html>

@@ -10,8 +10,8 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+   margin: 0;
+   padding: 0;
   color: white;
 }
 
@@ -26,60 +26,8 @@ header{
   align-items: center;
 }
 
-.hamburger{
-  cursor: pointer;
-  font-size: 30px;
-  display: none;
-}
+@media (max-width:768px) {
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: inherit;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
 }
 /*End of Header*/
 body{
@@ -105,17 +53,9 @@ footer{
    padding: 30px 15px;
    margin: auto;
    font-size: 19px;
-
 }
 footer p {
   padding: 5px;
-}
-@media (max-width:768px) {
-  footer{
-    position: sticky;
-      left: 0;
-      bottom: 0;%;
-  }
 }
 /*information for nav*/
 .links{
@@ -125,6 +65,11 @@ footer p {
   display: inline;
   font-size: 20px;
   padding: 20px;
+}
+@media (max-width:768px) {
+  .links{
+    display: grid;
+  }
 }
 /*End of information for nav*/
 

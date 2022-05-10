@@ -15,21 +15,6 @@
   color: white;
 }
 
-.fa{
-  padding: 5%;
-}
-
-/*Start of header*/
-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-@media (max-width:768px) {
-
-}
-/*End of Header*/
 body{
   background-color: black;
 }
@@ -42,6 +27,10 @@ p,a,li{
 }
 li{
   list-style: none;
+}
+li:hover{
+  background-color: gray;
+  color: white;
 }
 a{
   text-decoration: none;
@@ -57,6 +46,13 @@ footer{
 footer p {
   padding: 5px;
 }
+/*Start of header*/
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /*information for nav*/
 .links{
   padding-right: 20px;
@@ -66,12 +62,13 @@ footer p {
   font-size: 20px;
   padding: 20px;
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
   .links{
     display: grid;
   }
 }
 /*End of information for nav*/
+/*End of Header*/
 
 /*Information on home page*/
 .nameslogan{
@@ -99,7 +96,7 @@ footer p {
   color: #f0ffff;
   background-color: #2A3B57;
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
   .nameslogan{
     padding: 75px 0;
   }
@@ -128,7 +125,7 @@ footer p {
   padding-bottom:55px;
   padding-left: 25px;
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
   .aboutpage{
     flex-wrap: wrap;
   }
@@ -170,7 +167,7 @@ footer p {
   padding-bottom: 50px;
   padding-right: 10%;
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
   .python, .cpp, .htmls{
     padding: 15px 50px;
   }
@@ -241,7 +238,7 @@ textarea{
   background-color: #825257;
 }
 
-@media (max-width:768px) {
+@media (max-width:767px) {
   .contacthead{
     width: 100%;
     text-align: center;
@@ -249,3 +246,10 @@ textarea{
   }
 }
 /*End of information on contact page*/
+@media (min-width: 768px) and  (max-width:1024px){
+  header{padding-bottom: 100px;
+  }
+  footer{
+    margin-top: 20%;
+  }
+}
